@@ -2,41 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Katsuno</title>
+<<<<<<< HEAD
     <link>/tags/</link>
+=======
+    <link>https/katsuno-tamako.github.io/tags/</link>
+>>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
     <description>Recent content in Tags on Katsuno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
+<<<<<<< HEAD
         <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+=======
+        <atom:link href="https/katsuno-tamako.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
     
     
     <item>
       <title>java</title>
+<<<<<<< HEAD
       <link>/tags/java/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/java/</guid>
+=======
+      <link>https/katsuno-tamako.github.io/tags/java/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https/katsuno-tamako.github.io/tags/java/</guid>
+>>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
       <description></description>
       
     </item>
     
     <item>
       <title>jvm</title>
+<<<<<<< HEAD
       <link>/tags/jvm/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/jvm/</guid>
+=======
+      <link>https/katsuno-tamako.github.io/tags/jvm/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https/katsuno-tamako.github.io/tags/jvm/</guid>
+>>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
       <description></description>
       
     </item>
     
     <item>
       <title>other</title>
+<<<<<<< HEAD
       <link>/tags/other/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/other/</guid>
+=======
+      <link>https/katsuno-tamako.github.io/tags/other/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https/katsuno-tamako.github.io/tags/other/</guid>
+>>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
       <description></description>
       
     </item>
