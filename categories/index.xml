@@ -2,53 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Katsuno</title>
-<<<<<<< HEAD
     <link>/categories/</link>
-=======
-    <link>https/katsuno-tamako.github.io/categories/</link>
->>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
     <description>Recent content in Categories on Katsuno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-<<<<<<< HEAD
         <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-=======
-        <atom:link href="https/katsuno-tamako.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
->>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
     
     
     <item>
       <title>JVM</title>
-<<<<<<< HEAD
       <link>/categories/jvm/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/jvm/</guid>
-=======
-      <link>https/katsuno-tamako.github.io/categories/jvm/</link>
-      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https/katsuno-tamako.github.io/categories/jvm/</guid>
->>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
       <description></description>
       
     </item>
     
     <item>
       <title>other</title>
-<<<<<<< HEAD
       <link>/categories/other/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/other/</guid>
-=======
-      <link>https/katsuno-tamako.github.io/categories/other/</link>
-      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https/katsuno-tamako.github.io/categories/other/</guid>
->>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
       <description></description>
       
     </item>

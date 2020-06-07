@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.72.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<<<<<<< HEAD
 <meta name="supported-color-schemes" content="light dark"><title>Java虚拟机_自动内存管理&nbsp;&ndash;&nbsp;Katsuno</title><link rel="stylesheet" href="/css/core.min.8df17c60f95edf379bfe550f2b4eee873b01a5e92c59b240b5ee7842c9ab5bd09e244f9119abaa48b40542fbd1a841c6.css" integrity="sha384-jfF8YPle3zeb/lUPK07uhzsBpeksWbJAte54QsmrW9CeJE&#43;RGauqSLQFQvvRqEHG"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Java虚拟机_自动内存管理" /><body><section id="header">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Katsuno</span></a></span>
         <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></nav></div></span></div><div class="site slogan"><span class="title">コードは私の彼女です~</span></div></section><section id="content"><div class="article-container"><section class="article header">
-=======
-<meta name="supported-color-schemes" content="light dark"><title>Java虚拟机_自动内存管理&nbsp;&ndash;&nbsp;Katsuno</title><link rel="stylesheet" href="/https/katsuno-tamako.github.io/css/core.min.fd55a325c42a330079367ae03a6d6f7717630d72fbc884afbd49bc4584287e340ea11f697de6f885382138fbf569e66b.css" integrity="sha384-/VWjJcQqMwB5NnrgOm1vdxdjDXL7yISvvUm8RYQofjQOoR9pfeb4hTghOPv1aeZr"><meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Java虚拟机_自动内存管理" /><body><section id="header">
-    <div class="header wrap"><span class="header left-side"><a class="site home" href="/https/katsuno-tamako.github.io/"><span class="site name">Katsuno</span></a></span>
-        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/https/katsuno-tamako.github.io/categories/">Categories</a><a class="nav item" href="/https/katsuno-tamako.github.io/tags/">Tags</a></nav></div></span></div><div class="site slogan"><span class="title">コードは私の彼女です~</span></div></section><section id="content"><div class="article-container"><section class="article header">
->>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
     <h1 class="article title">Java虚拟机_自动内存管理</h1><p class="article date">2020-06-06</p></section><article class="article markdown-body"><h1 id="jvm-自动内存管理">JVM 自动内存管理</h1>
 <h3 id="运行时数据区域">运行时数据区域</h3>
 <h4 id="程序计数器-program-counter-register">程序计数器 （Program Counter Register）</h4>
@@ -19,23 +12,13 @@
 <p>程序计数器是一个较小的内存空间，可以看作是当前线程所执行的字节码的行号指示器。
 Java虚拟机的概念模型里，字节码解释器工作时就是通过改变这个计数器的值来选取下一条需要执行的字节码指令，他是程序控制流的指示器，分支、循环、跳转、异常处理、线程回复等基础功能都需要依赖这个计数器完成。</p>
 </blockquote>
-<<<<<<< HEAD
 </article><section class="article labels"><a class="category" href=/categories/jvm/>JVM</a><a class="tag" href=/tags/java/>java</a><a class="tag" href=/tags/jvm/>jvm</a></section><section class="article author"><img class="avatar" src="/img/avatar.jpg" alt><p class="name">Katsuno</p><div class="details"><a class="item" href="https://github.com/Katsuno-tamako" target="_blank"><span class="iconfont icon-github"></span>&nbsp;Katsuno-tamako</a><a class="item" href="mailto:1624197122@qq.com" target="_blank"><span class="iconfont icon-email"></span>&nbsp;1624197122@qq.com</a></div>
 </section></div>
 <div class="article bottom"><section class="article navigation"><p><a class="link" href="/java/blog/"><span class="iconfont icon-article"></span>My fist blog</a></p></section></div></section><section id="footer"><div class="footer-wrap">
-=======
-</article><section class="article labels"><a class="category" href=/https/katsuno-tamako.github.io/categories/jvm/>JVM</a><a class="tag" href=/https/katsuno-tamako.github.io/tags/java/>java</a><a class="tag" href=/https/katsuno-tamako.github.io/tags/jvm/>jvm</a></section><section class="article author"><img class="avatar" src="/https/katsuno-tamako.github.io/img/avatar.jpg" alt><p class="name">Katsuno</p><div class="details"><a class="item" href="https://github.com/Katsuno-tamako" target="_blank"><span class="iconfont icon-github"></span>&nbsp;Katsuno-tamako</a><a class="item" href="mailto:1624197122@qq.com" target="_blank"><span class="iconfont icon-email"></span>&nbsp;1624197122@qq.com</a></div>
-</section></div>
-<div class="article bottom"><section class="article navigation"><p><a class="link" href="https/katsuno-tamako.github.io/java/blog/"><span class="iconfont icon-article"></span>My fist blog</a></p></section></div></section><section id="footer"><div class="footer-wrap">
->>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
     <p class="copyright">Katsuno</p>
     <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
         target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
         target="_blank">Notepadium</a></p>
-<<<<<<< HEAD
 </div></section><script src="/js/hljs.min.0799348a91dce12c6be4a73f943cfe78f181f4e6f6ec35c4af0fca1de377879f77cfab03c30f03a174d675737b5a9314.js" integrity="sha384-B5k0ipHc4Sxr5Kc/lDz&#43;ePGB9Ob27DXErw/KHeN3h593z6sDww8DoXTWdXN7WpMU"></script><script>hljs.initHighlightingOnLoad();</script></body>
-=======
-</div></section><script src="/https/katsuno-tamako.github.io/js/hljs.min.0799348a91dce12c6be4a73f943cfe78f181f4e6f6ec35c4af0fca1de377879f77cfab03c30f03a174d675737b5a9314.js" integrity="sha384-B5k0ipHc4Sxr5Kc/lDz&#43;ePGB9Ob27DXErw/KHeN3h593z6sDww8DoXTWdXN7WpMU"></script><script>hljs.initHighlightingOnLoad();</script></body>
->>>>>>> e88a4e65b3b3be6b212cb1944b46be15c4b4f18f
 
 </html>
