@@ -6,17 +6,27 @@
     <description>Recent content in JVM on Katsuno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/categories/jvm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Java虚拟机_HotSpot</title>
+      <link>/page/jvm_2_2/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/page/jvm_2_2/</guid>
+      <description>对象创建 指针碰撞（Bump The Pointer） 假设Java堆中内存是绝对规整为分界点的，所有被使用过的内存都放在一边，空闲的都放在一边，中间放</description>
+      
+    </item>
+    
+    <item>
       <title>Java虚拟机_自动内存管理_运行时数据区域</title>
-      <link>/java/jvm/</link>
+      <link>/page/jvm_2_1/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/java/jvm/</guid>
+      <guid>/page/jvm_2_1/</guid>
       <description>JVM 自动内存管理 运行时数据区域 程序计数器 （Program Counter Register） 程序计数器是一个较小的内存空间，可以看作是当前线程所执行的字节码的</description>
       
     </item>

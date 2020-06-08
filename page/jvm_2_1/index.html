@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.72.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Java虚拟机_自动内存管理_运行时数据区域&nbsp;&ndash;&nbsp;Katsuno</title><link rel="stylesheet" href="/css/core.min.8df17c60f95edf379bfe550f2b4eee873b01a5e92c59b240b5ee7842c9ab5bd09e244f9119abaa48b40542fbd1a841c6.css" integrity="sha384-jfF8YPle3zeb/lUPK07uhzsBpeksWbJAte54QsmrW9CeJE&#43;RGauqSLQFQvvRqEHG"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Java虚拟机_自动内存管理_运行时数据区域" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Katsuno</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></nav></div></span></div><div class="site slogan"><span class="title">コードは私の彼女です~</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Java虚拟机_自动内存管理_运行时数据区域</h1><p class="article date">2020-06-06</p></section><article class="article markdown-body"><h1 id="jvm-自动内存管理">JVM 自动内存管理</h1>
+<p><img  src="img/JVM.png"
+        alt="JVM结构"/></p>
+<h3 id="运行时数据区域">运行时数据区域</h3>
+<h4 id="程序计数器-program-counter-register">程序计数器 （Program Counter Register）</h4>
+<blockquote>
+<p>程序计数器是一个较小的内存空间，可以看作是当前线程所执行的字节码的行号指示器。
+Java虚拟机的概念模型里，字节码解释器工作时就是通过改变这个计数器的值来选取下一条需要执行的字节码指令，他是程序控制流的指示器，分支、循环、跳转、异常处理、线程回复等基础功能都需要依赖这个计数器完成。</p>
+</blockquote>
+<h4 id="程序计数器program-counter-register">程序计数器（Program Counter Register）</h4>
+<blockquote>
+<p>程序计数器是一块较小的内存空间，它可以看作是当前线程所执行的字节码的行号指示器。
+字节码解释器工作时，通过改变这个计数器的值来选取吓一跳需要执行的字节码指令，他是程序控制流的治时期，分支、循环、跳转、异常处理、线程恢复等基础功能都需要依赖这个计数器完成。</p>
+<p>Java虚拟机的多线程是通过轮流切换、分配处理执行时间的方式实现的，在任何一个确定的时刻，一个处理器都只会执行一条线程中的指令。因此，为了线程切换后能恢复刀正确的执行位置，每条线程都需要有一个独立的程序计数器，各条线程之前的计数器互不影响，独立存储，我们成为这类内存区域为<strong>线程私有</strong>的内存。</p>
+</blockquote>
+<h4 id="java虚拟机栈java-virtual-machine-stack">Java虚拟机栈（Java Virtual Machine Stack）</h4>
+<blockquote>
+<p>Java虚拟机栈也是线程私有的，它的生命周期与线程相同。
+Java虚拟机栈描述的式Java方法执行的线程内存模型：每个方法被执行的时候，Java虚拟机都会<strong>同步</strong>创建一个栈帧(Stack Frame)用于存储局部变量表、操作数栈、动态链接、方法出口等信息。每一个方法被调用直至执行完毕的过程，就对应着一个栈桢在虚拟机栈中从入栈到出栈的过程。<br>
+栈通常是虚拟机的栈，或者更多情况下式虚拟机栈中局部变量表的部分。</p>
+<p>局部变量表存放着编译器可知的各种Java虚拟机基本数据类型、对象引用（reference类型）、和returnAddress类型（指向一条字节码指令的地址）。<br>
+这些数据类型在局部变量表中的存储空间以局部变量槽（Slot）来表示。其中64位的long和double类型的数据会占用两个变量槽，其余的数据类型只占用一个。</p>
+</blockquote>
+<h4 id="本地方法栈native-method-stacks">本地方法栈(Native Method Stacks)</h4>
+<blockquote>
+<p>本地方法栈与虚拟机栈所发挥的作用是非常相似的，虚拟机栈是为虚拟机执行Java方法服务，本地栈是为虚拟机使用到的本地方法服务。</p>
+</blockquote>
+<h4 id="java堆java-heap">Java堆（Java Heap）</h4>
+<blockquote>
+<p>Java堆式虚拟机所管理的内存中最大的一块。<br>
+Java堆式被所有线程共享的一块内存区域，在虚拟机启动时创建。此内存区域的唯一目的就是存放对象实例。<br>
+《Java虚拟机规范》中，Java堆的描述：“所有的对象实例以及数组都应当在堆上分配。”<br>
+Java堆式垃圾收集器管理的内存区域，因此一些资料中被称作为&quot;GC堆（Garbage Collected Heap）&rdquo;.<br>
+从分配内存的角度看，所有线程共享的Java堆中可以划分出多个<strong>线程私有的分配缓冲区（Thread Local Allocation Buffer,TLAB）</strong>,以提升对象分配时的效率。<br>
+根据《Java虚拟机规范》的规定，Java堆可以处于物理上不连续的内存空间。<br>
+Java堆既可以被试实现成固定大小的，也可以是可扩展的，不过当前主流的Java虚拟机都是按照课扩展来实现的。</p>
+</blockquote>
+<h4 id="方法区method-area">方法区（Method Area）</h4>
+<blockquote>
+<p>方法去与Java堆一样，时个线程共享的内存区域，用于存储已被虚拟机加载的类型信息、常量、静态变量、即时编译后的代码缓存等数据。</p>
+<blockquote>
+<h5 id="永久代">永久代</h5>
+</blockquote>
+</blockquote>
+<h4 id="运行时常量池runtime-constant-pool">运行时常量池（Runtime Constant Pool）</h4>
+<blockquote>
+<p>运行时常量池时方法去的一部分。<br>
+常量池表，用于存放编译期生成的各种字面量与符号引用，这部分内容将在类加载后存放方法区的运行时常量池中。<br>
+运行时常量池相对于Class文件常量池的另外一个总要特征是动态性，Java语言并不要求常量一定只有编译期才能产生，也就是说没并非预置入Class文件中常量池的内容才能进入方法去运行时常量池，运行期间也可以将新的常量放入池中，这总特性被开发人员利用的比较多的便是String类的intern()方法。</p>
+</blockquote>
+</article><section class="article labels"><a class="category" href=/categories/jvm/>JVM</a><a class="tag" href=/tags/java/>java</a><a class="tag" href=/tags/jvm/>jvm</a></section><section class="article author"><img class="avatar" src="/img/avatar.jpg" alt><p class="name">Katsuno</p><div class="details"><a class="item" href="https://github.com/Katsuno-tamako" target="_blank"><span class="iconfont icon-github"></span>&nbsp;Katsuno-tamako</a><a class="item" href="mailto:1624197122@qq.com" target="_blank"><span class="iconfont icon-email"></span>&nbsp;1624197122@qq.com</a></div>
+</section></div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/page/jvm_2_2/"><span class="iconfont icon-article"></span>Java虚拟机_HotSpot</a></p><p><a class="link" href="/page/blog/"><span class="iconfont icon-article"></span>My fist blog</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">Katsuno</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script src="/js/hljs.min.0799348a91dce12c6be4a73f943cfe78f181f4e6f6ec35c4af0fca1de377879f77cfab03c30f03a174d675737b5a9314.js" integrity="sha384-B5k0ipHc4Sxr5Kc/lDz&#43;ePGB9Ob27DXErw/KHeN3h593z6sDww8DoXTWdXN7WpMU"></script><script>hljs.initHighlightingOnLoad();</script></body>
+
+</html>

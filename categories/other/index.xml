@@ -13,10 +13,10 @@
     
     <item>
       <title>My fist blog</title>
-      <link>/java/blog/</link>
+      <link>/page/blog/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/java/blog/</guid>
+      <guid>/page/blog/</guid>
       <description>this is a test article 这是一篇测试文章</description>
       
     </item>
