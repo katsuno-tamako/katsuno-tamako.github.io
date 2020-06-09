@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>jvm on Katsuno</title>
+    <title>JVM on Katsuno</title>
     <link>/tags/jvm/</link>
-    <description>Recent content in jvm on Katsuno</description>
+    <description>Recent content in JVM on Katsuno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/tags/jvm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>垃圾收集器与内存分配策略1</title>
+      <link>/page/jvm_200609/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/page/jvm_200609/</guid>
+      <description>垃圾收集器与内存分配策略 1 垃圾收集器（Garbage Collection） Java堆和方法去的两个不确定性： 一个接口的多个实现类所需要内存不</description>
+      
+    </item>
     
     <item>
       <title>Java虚拟机_HotSpot</title>
