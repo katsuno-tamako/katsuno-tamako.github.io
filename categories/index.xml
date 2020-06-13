@@ -6,10 +6,20 @@
     <description>Recent content in Categories on Katsuno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>日本語</title>
+      <link>/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>JVM</title>
@@ -17,16 +27,6 @@
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/jvm/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>日本語</title>
-      <link>/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link>
-      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</guid>
       <description></description>
       
     </item>
