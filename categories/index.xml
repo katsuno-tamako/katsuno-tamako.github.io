@@ -12,21 +12,21 @@
     
     
     <item>
-      <title>日本語</title>
-      <link>/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link>
+      <title>JVM</title>
+      <link>/categories/jvm/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</guid>
+      <guid>/categories/jvm/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>JVM</title>
-      <link>/categories/jvm/</link>
-      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      <title>日本語</title>
+      <link>/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/jvm/</guid>
+      <guid>/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</guid>
       <description></description>
       
     </item>
