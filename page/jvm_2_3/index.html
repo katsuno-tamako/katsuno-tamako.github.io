@@ -36,6 +36,7 @@
 <p>简称复制算法。为解决标记-清除算法面对大量可回收对象时执行效率低问题。<br>
 1969年Fenichel提出了“半区复制”的垃圾收集算法，将可用内存按容量划分为大小相等的两块，每次只是用其中的一块，这一块的内存用完了就复制到另一块上面，然后把已经使用的内存空间一次清理掉。</p>
 <h2 id="标记-整理算法">标记-整理算法</h2>
+<p>其中标记过程任然与标记-清楚算法一样，但后续步骤不是直接对可回收对象进行清理，而是让所有存活的对象都想空间一端移动，然后直接清理掉边界以外的内存。</p>
 </article><section class="article labels"><a class="category" href=/categories/jvm/>JVM</a><a class="tag" href=/tags/java/>java</a><a class="tag" href=/tags/jvm/>jvm</a></section><section class="article author"><img class="avatar" src="/img/avatar.jpg" alt><p class="name">Katsuno</p><div class="details"><a class="item" href="https://github.com/Katsuno-tamako" target="_blank"><span class="iconfont icon-github"></span>&nbsp;Katsuno-tamako</a><a class="item" href="mailto:1624197122@qq.com" target="_blank"><span class="iconfont icon-email"></span>&nbsp;1624197122@qq.com</a></div>
 </section></div>
 <div class="article bottom"><section class="article navigation"><p><a class="link" href="/page/primary_jp_9_12/"><span class="iconfont icon-article"></span>标准日本语初级上9~12</a></p></section></div></section><section id="footer"><div class="footer-wrap">
