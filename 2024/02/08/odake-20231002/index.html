@@ -10,12 +10,14 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="article">
+  <meta name="description" content="第一次爬大岳山">
+<meta property="og:type" content="article">
 <meta property="og:title" content="御岳山-&gt;大岳山 2023年10月2日">
 <meta property="og:url" content="http://example.com/2024/02/08/odake-20231002/index.html">
 <meta property="og:site_name" content="noAKiRa">
+<meta property="og:description" content="第一次爬大岳山">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/imags/odaka20231002/odk1.jpg">
+<meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_0989.jpg">
 <meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_0899.jpg">
 <meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_0900.jpg">
 <meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_0906.jpg">
@@ -29,14 +31,14 @@
 <meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_0965.jpg">
 <meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_0966.jpg">
 <meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_0987.jpg">
-<meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_0989.jpg">
+<meta property="og:image" content="http://example.com/imags/odaka20231002/odk1.jpg">
 <meta property="og:image" content="http://example.com/imags/odaka20231002/DSC_1062.jpg">
 <meta property="article:published_time" content="2024-02-08T12:15:04.000Z">
-<meta property="article:modified_time" content="2024-02-08T12:32:49.302Z">
+<meta property="article:modified_time" content="2024-02-08T12:56:10.100Z">
 <meta property="article:author" content="NoAkiRa">
 <meta property="article:tag" content="山登り">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/imags/odaka20231002/odk1.jpg">
+<meta name="twitter:image" content="http://example.com/imags/odaka20231002/DSC_0989.jpg">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -59,6 +61,9 @@
   
 
 
+  
+    <script src="/lib/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
   
 
 </head>
@@ -90,6 +95,8 @@
 		</nav>
 		<nav class="header-smart-menu">
 			
+				
+					<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">tag</a>
 				
 			
 				
@@ -202,7 +209,7 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p><img src="/../imags/odaka20231002/odk1.jpg"></p>
+    <p><img src="/../imags/odaka20231002/DSC_0989.jpg"></p>
 <span id="more"></span>
 
 
@@ -220,7 +227,7 @@
 <p><img src="/../imags/odaka20231002/DSC_0965.jpg"></p>
 <p><img src="/../imags/odaka20231002/DSC_0966.jpg"></p>
 <p><img src="/../imags/odaka20231002/DSC_0987.jpg"></p>
-<p><img src="/../imags/odaka20231002/DSC_0989.jpg"></p>
+<p><img src="/../imags/odaka20231002/odk1.jpg"></p>
 <p><img src="/../imags/odaka20231002/DSC_1062.jpg"></p>
 
     
@@ -328,7 +335,7 @@
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
-		innerArchive: false,
+		innerArchive: true,
 		showTags: true
 	}
 </script>
@@ -346,6 +353,8 @@
     
     
       
+      
+      
     
       
     
@@ -357,6 +366,8 @@
     
     
       
+      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">tag</a></li>
+      
         
       
         
@@ -365,6 +376,73 @@
     </ul>
   </div>
   <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">山登り</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia-plus根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            3、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
     
 
     
