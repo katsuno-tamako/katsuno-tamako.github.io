@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>noAKiRa</title>
+  <title>study-java-Date | noAKiRa</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="noAKiRa">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+  <meta name="description" content="Java Date">
+<meta property="og:type" content="article">
+<meta property="og:title" content="study-java-Date">
+<meta property="og:url" content="http://example.com/2024/05/06/study-java-Date/index.html">
 <meta property="og:site_name" content="noAKiRa">
+<meta property="og:description" content="Java Date">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-06T05:10:40.000Z">
+<meta property="article:modified_time" content="2024-05-06T05:11:03.228Z">
 <meta property="article:author" content="NoAkiRa">
+<meta property="article:tag" content="java;">
 <meta name="twitter:card" content="summary">
   
   
@@ -169,27 +170,22 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-JinBa-TaKaO20231104" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-study-java-Date" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2024/02/08/JinBa-TaKaO20231104/">阵马山-&gt;高尾山 纵走</a>
-	
+    <h1 class="article-title" itemprop="name">
+      study-java-Date
     </h1>
   
 
 
   
   
-<a href="/2024/02/08/JinBa-TaKaO20231104/" class="archive-article-date">
-        <time datetime="2024-02-08T12:58:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-02-08</time>
+<a href="/2024/05/06/study-java-Date/" class="archive-article-date">
+        <time datetime="2024-05-06T05:10:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-06</time>
 </a>
 
   
@@ -198,10 +194,190 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p><img src="/../imags/JinBa20231104/DSC_1114.jpg"></p>
-    
-    <a class="article-more-a" href="/2024/02/08/JinBa-TaKaO20231104/#more">more >></a>
-    
+    <h1 id="Java-Date"><a href="#Java-Date" class="headerlink" title="Java Date"></a>Java Date</h1><span id="more"></span>
+
+<p><code>java.util.Date</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Date</span> <span class="variable">date</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Date</span>();</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="SimpleDateFormat"><a href="#SimpleDateFormat" class="headerlink" title="SimpleDateFormat"></a>SimpleDateFormat</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">studyDate</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Date</span> <span class="variable">date</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line">        <span class="type">SimpleDateFormat</span> <span class="variable">ft</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SimpleDateFormat</span>(<span class="string">&quot;yyyy/MM/dd hh:mm:ss&quot;</span>);</span><br><span class="line">        System.out.println(ft.format(date));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>字母</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>G</td>
+<td>纪元标记</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>y</td>
+<td>四位年份</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>M</td>
+<td>月份</td>
+<td>July or 07</td>
+</tr>
+<tr>
+<td>d</td>
+<td>一个月的日期</td>
+<td>10</td>
+</tr>
+<tr>
+<td>h</td>
+<td>A.M.&#x2F;P.M.（1~12）</td>
+<td>12</td>
+</tr>
+<tr>
+<td>H</td>
+<td>一天中的小时（0~23）</td>
+<td>22</td>
+</tr>
+<tr>
+<td>m</td>
+<td>分钟数</td>
+<td>30</td>
+</tr>
+<tr>
+<td>s</td>
+<td>秒数</td>
+<td>55</td>
+</tr>
+<tr>
+<td>S</td>
+<td>毫秒数</td>
+<td>234</td>
+</tr>
+<tr>
+<td>E</td>
+<td>星期</td>
+<td>Monday</td>
+</tr>
+<tr>
+<td>D</td>
+<td>一年中的日子</td>
+<td>102</td>
+</tr>
+<tr>
+<td>F</td>
+<td>一个月的第几周的周几</td>
+<td>2(second Wed. in July)</td>
+</tr>
+<tr>
+<td>w</td>
+<td>一年中的第几周</td>
+<td>40</td>
+</tr>
+<tr>
+<td>W</td>
+<td>一个月中的第几周</td>
+<td>1</td>
+</tr>
+<tr>
+<td>a</td>
+<td>A.M.&#x2F;P.M.标记</td>
+<td>PM</td>
+</tr>
+<tr>
+<td>k</td>
+<td>一天中的小时（1~24）</td>
+<td>20</td>
+</tr>
+<tr>
+<td>K</td>
+<td>A.M.&#x2F;P.M.（0~11）格式小时</td>
+<td>10</td>
+</tr>
+<tr>
+<td>z</td>
+<td>时区</td>
+<td>Eastern Standard Time</td>
+</tr>
+</tbody></table>
+<h1 id="Calendar"><a href="#Calendar" class="headerlink" title="Calendar"></a>Calendar</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Calendar</span> <span class="variable">c1</span> <span class="operator">=</span> Calendar.getInstance(); <span class="comment">//默认是当前日期</span></span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>常量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Calendar.YEAR</td>
+</tr>
+<tr>
+<td>Calendar.MONTH</td>
+</tr>
+<tr>
+<td>Calendar.DATE</td>
+</tr>
+<tr>
+<td>Calendar.DAY_OF_MONTH</td>
+</tr>
+<tr>
+<td>Calendar.HOUR</td>
+</tr>
+<tr>
+<td>Calendar.HOUR_OF_DAY</td>
+</tr>
+<tr>
+<td>Calendar.MINUTE</td>
+</tr>
+<tr>
+<td>Calendar.SECOND</td>
+</tr>
+<tr>
+<td>Calendar.DAY_OF_WEEK</td>
+</tr>
+</tbody></table>
+<p><strong>set</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">set</span><span class="params">(<span class="type">int</span> year, <span class="type">int</span> month, <span class="type">int</span> date)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c1.set(<span class="number">2022</span>, <span class="number">2</span>, <span class="number">21</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>Add</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c1.add(Calendar.Date, <span class="number">10</span>);	<span class="comment">//c1对象的日期+10</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c1.add(Calendar.Date, -<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>get</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Calendar</span> <span class="variable">c1</span> <span class="operator">=</span> Calendar.getInstance();</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="variable">year</span> <span class="operator">=</span> c1.get(Calendar.YEAR);</span><br><span class="line"><span class="type">int</span> <span class="variable">month</span> <span class="operator">=</span> c1.get(Calendar.MONTH) + <span class="number">1</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">date</span> <span class="operator">=</span> c1.get(Calendar.DATE);</span><br><span class="line"><span class="type">int</span> <span class="variable">hour</span> <span class="operator">=</span> c1.get(Calendar.HOUR_OF_DAY);</span><br><span class="line"><span class="type">int</span> <span class="variable">minute</span> <span class="operator">=</span> c1.get(Calendar.MINUTE);</span><br><span class="line"><span class="type">int</span> <span class="variable">second</span> <span class="operator">=</span> c1.get(Calendar.SECOND);</span><br><span class="line"><span class="type">int</span> <span class="variable">day</span> <span class="operator">=</span> c1.get(Calendar.DAY_OF_WEEK);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
     
@@ -217,7 +393,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">山登り</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">java;</a>
         		</li>
       		
 		</ul>
@@ -226,16 +402,24 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2024/02/08/JinBa-TaKaO20231104/">展开全文 >></a>
-    </p>
-    
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2024/05/06/study-java-Scanner/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">study-java-Scanner</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -256,777 +440,14 @@
 
 
 
-  
-    <article id="post-odake-20231002" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2024/02/08/odake-20231002/">御岳山-&gt;大岳山 2023年10月2日</a>
-	
-    </h1>
-  
 
 
-  
-  
-<a href="/2024/02/08/odake-20231002/" class="archive-article-date">
-        <time datetime="2024-02-08T12:15:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-02-08</time>
-</a>
 
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/odaka20231002/DSC_0989.jpg"></p>
-    
-    <a class="article-more-a" href="/2024/02/08/odake-20231002/#more">more >></a>
-    
-    
 
-    
 
-    
 
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">山登り</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-    
 
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2024/02/08/odake-20231002/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-tanZa" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2024/02/08/tanZa/">丹沢山 2023-9-30</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2024/02/08/tanZa/" class="archive-article-date">
-        <time datetime="2024-02-07T15:02:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-02-08</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/tanza_1/0102.jpg"></p>
-    
-    <a class="article-more-a" href="/2024/02/08/tanZa/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">山登り</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2024/02/08/tanZa/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-more-router" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2024/02/01/more-router/">more-router</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2024/02/01/more-router/" class="archive-article-date">
-        <time datetime="2024-02-01T14:50:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-02-01</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h3 id="多路由文件"><a href="#多路由文件" class="headerlink" title="多路由文件"></a>多路由文件</h3>
-    
-    <a class="article-more-a" href="/2024/02/01/more-router/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2024/02/01/more-router/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20230420" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/03/15/20230420/">名古屋、滋賀</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/03/15/20230420/" class="archive-article-date">
-        <time datetime="2023-03-15T14:13:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-15</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20230420/DSC_0483.jpg"></p>
-    
-    <a class="article-more-a" href="/2023/03/15/20230420/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/03/15/20230420/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20230102" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/01/02/20230102/">大山</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/01/02/20230102/" class="archive-article-date">
-        <time datetime="2023-01-02T13:51:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-02</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20230102/DSC_0433.jpg"></p>
-    
-    <a class="article-more-a" href="/2023/01/02/20230102/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/01/02/20230102/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20220503" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/05/03/20220503/">20220503</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/05/03/20220503/" class="archive-article-date">
-        <time datetime="2022-05-03T06:11:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-03</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20220503/DSC_1718.jpg"></p>
-    
-    <a class="article-more-a" href="/2022/05/03/20220503/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/05/03/20220503/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20220430" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/04/30/20220430/">20220430</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/04/30/20220430/" class="archive-article-date">
-        <time datetime="2022-04-30T13:19:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-30</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20220430/DSC_1277.jpg"></p>
-    
-    <a class="article-more-a" href="/2022/04/30/20220430/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/04/30/20220430/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210709" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/07/09/20210709/">大连-小平岛</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/07/09/20210709/" class="archive-article-date">
-        <time datetime="2021-07-09T12:56:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-09</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20210709/DSC_1127.jpg"></p>
-    
-    <a class="article-more-a" href="/2021/07/09/20210709/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/07/09/20210709/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210630" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/06/30/20210630/">20210630</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/06/30/20210630/" class="archive-article-date">
-        <time datetime="2021-06-30T06:02:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-30</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20210630/DSC_0899.jpg"></p>
-    
-    <a class="article-more-a" href="/2021/06/30/20210630/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/06/30/20210630/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
-  
 
 
           </div>
@@ -1054,8 +475,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
