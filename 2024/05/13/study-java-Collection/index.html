@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>noAKiRa</title>
+  <title>study-java-Collection | noAKiRa</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="noAKiRa">
-<meta property="og:url" content="http://example.com/page/3/index.html">
+  <meta name="description" content="Collection">
+<meta property="og:type" content="article">
+<meta property="og:title" content="study-java-Collection">
+<meta property="og:url" content="http://example.com/2024/05/13/study-java-Collection/index.html">
 <meta property="og:site_name" content="noAKiRa">
+<meta property="og:description" content="Collection">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-13T14:32:35.000Z">
+<meta property="article:modified_time" content="2024-05-13T14:32:49.129Z">
 <meta property="article:author" content="NoAkiRa">
+<meta property="article:tag" content="java;">
 <meta name="twitter:card" content="summary">
   
   
@@ -169,27 +170,22 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-20230102" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-study-java-Collection" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/01/02/20230102/">大山</a>
-	
+    <h1 class="article-title" itemprop="name">
+      study-java-Collection
     </h1>
   
 
 
   
   
-<a href="/2023/01/02/20230102/" class="archive-article-date">
-        <time datetime="2023-01-02T13:51:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-02</time>
+<a href="/2024/05/13/study-java-Collection/" class="archive-article-date">
+        <time datetime="2024-05-13T14:32:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-13</time>
 </a>
 
   
@@ -198,10 +194,27 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p><img src="/../imags/20230102/DSC_0433.jpg"></p>
-    
-    <a class="article-more-a" href="/2023/01/02/20230102/#more">more >></a>
-    
+    <h1 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h1><span id="more"></span>
+
+
+
+<h2 id="collection"><a href="#collection" class="headerlink" title="collection"></a>collection</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> stu.CollectionStudy;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Collection;</span><br><span class="line"><span class="keyword">import</span> java.util.LinkedList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">CollectionStudy</span> &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Collection&lt;String&gt; colArrayList = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;String&gt;();</span><br><span class="line"></span><br><span class="line">        Collection&lt;String&gt; colLinkedList = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;String&gt;();</span><br><span class="line"></span><br><span class="line">        colArrayList.add(<span class="string">&quot;Wa&quot;</span>);</span><br><span class="line">        colArrayList.add(<span class="string">&quot;Ji&quot;</span>);</span><br><span class="line">        colArrayList.add(<span class="string">&quot;Liu&quot;</span>);</span><br><span class="line">        colArrayList.add(<span class="string">&quot;San&quot;</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(colArrayList);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;判断是否有&quot;</span>+colArrayList.contains(<span class="string">&quot;Wa&quot;</span>));</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;remove&quot;</span>+colArrayList.remove(<span class="string">&quot;Wa&quot;</span>));</span><br><span class="line">        System.out.println(colArrayList);</span><br><span class="line"></span><br><span class="line">        System.out.println(colArrayList.size());</span><br><span class="line"></span><br><span class="line">        Object[] objects = colArrayList.toArray();</span><br><span class="line"></span><br><span class="line">        colArrayList.clear();</span><br><span class="line"></span><br><span class="line">        System.out.println(colArrayList);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> stu.CollectionStudy;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ListStudy</span> &#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">        list 是线性方式存储</span></span><br><span class="line"><span class="comment">        list 带索引</span></span><br><span class="line"><span class="comment">        list 元素是有序的</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">        Array底层采用数组实现，查询快，增删慢</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">        LinkedList底层采用双向链表，查询慢，增删快</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;String&gt;();</span><br><span class="line">        list.add(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">        list.add(<span class="string">&quot;c&quot;</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(list);</span><br><span class="line"></span><br><span class="line">        list.add(<span class="number">1</span>,<span class="string">&quot;e&quot;</span>);</span><br><span class="line">        System.out.println(list);</span><br><span class="line"></span><br><span class="line">        list.remove(<span class="number">2</span>);</span><br><span class="line">        System.out.println(list);</span><br><span class="line"></span><br><span class="line">        list.set(<span class="number">0</span>,<span class="string">&quot;f&quot;</span>);</span><br><span class="line">        System.out.println(list);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;list.size();i++)&#123;</span><br><span class="line">            System.out.println(list.get(i));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(String s : list)&#123;</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        LinkedList&lt;String&gt; link = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;String&gt;();</span><br><span class="line">        link.add(<span class="string">&quot;abc&quot;</span>);</span><br><span class="line">        link.add(<span class="string">&quot;def&quot;</span>);</span><br><span class="line">        link.add(<span class="string">&quot;ghi&quot;</span>);</span><br><span class="line">        link.add(<span class="string">&quot;jkl&quot;</span>);</span><br><span class="line">        link.add(<span class="string">&quot;mno&quot;</span>);</span><br><span class="line">        link.add(<span class="string">&quot;pqr&quot;</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(link.getFirst());</span><br><span class="line">        System.out.println(link.getLast());</span><br><span class="line"></span><br><span class="line">        link.removeFirst();</span><br><span class="line">        System.out.println(link);</span><br><span class="line"></span><br><span class="line">        link.removeLast();</span><br><span class="line">        System.out.println(link);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (!link.isEmpty())&#123;</span><br><span class="line">            <span class="comment">//pop() 弹出集合中的栈顶元素</span></span><br><span class="line">            System.out.println(link.pop());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="set"><a href="#set" class="headerlink" title="set"></a>set</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> stu.CollectionStudy;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.HashSet;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.LinkedHashSet;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SetStudy</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">        Set是五索引</span></span><br><span class="line"><span class="comment">        除了LinkerHashSet以外，都是无序的</span></span><br><span class="line"><span class="comment">        Set元素不可以重复</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line"></span><br><span class="line">        HashSet&lt;String&gt; hashSet =  <span class="keyword">new</span> <span class="title class_">HashSet</span>&lt;String&gt;();</span><br><span class="line">        hashSet.add(<span class="string">&quot;abc&quot;</span>);</span><br><span class="line">        hashSet.add(<span class="string">&quot;def&quot;</span>);</span><br><span class="line">        hashSet.add(<span class="string">&quot;hij&quot;</span>);</span><br><span class="line">        hashSet.add(<span class="string">&quot;klm&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(String s : hashSet)&#123;</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        Set&lt;String&gt; set = <span class="keyword">new</span> <span class="title class_">LinkedHashSet</span>&lt;String&gt;();</span><br><span class="line">        set.add(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        set.add(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">        set.add(<span class="string">&quot;c&quot;</span>);</span><br><span class="line">        set.add(<span class="string">&quot;d&quot;</span>);</span><br><span class="line">        set.add(<span class="string">&quot;e&quot;</span>);</span><br><span class="line"></span><br><span class="line">        Iterator&lt;String&gt; it = set.iterator();</span><br><span class="line">        <span class="keyword">while</span> (it.hasNext())&#123;</span><br><span class="line">            System.out.println(it.next());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> stu.CollectionStudy;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MapStudy</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        HashMap&lt;Integer, String&gt; Sites1 = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;Integer, String&gt;();</span><br><span class="line">        Sites1.put(<span class="number">1</span>,<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        Sites1.put(<span class="number">2</span>,<span class="string">&quot;b&quot;</span>);</span><br><span class="line">        Sites1.put(<span class="number">3</span>,<span class="string">&quot;c&quot;</span>);</span><br><span class="line">        System.out.println(Sites1);</span><br><span class="line"></span><br><span class="line">        System.out.println(Sites1.get(<span class="number">1</span>));</span><br><span class="line"></span><br><span class="line">        Sites1.remove(<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(Sites1.size());</span><br><span class="line"></span><br><span class="line">        Sites1.clear();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        HashMap&lt;String, String&gt; Sites2 = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, String&gt;();</span><br><span class="line">        Sites2.put(<span class="string">&quot;A&quot;</span>,<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        Sites2.put(<span class="string">&quot;B&quot;</span>,<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        Sites2.put(<span class="string">&quot;C&quot;</span>,<span class="string">&quot;a&quot;</span>);</span><br><span class="line">        System.out.println(Sites2);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(String s:Sites2.keySet())&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;key:&quot;</span>+s+<span class="string">&quot; value:&quot;</span>+Sites2.get(s));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(String s:Sites2.values())&#123;</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -217,7 +230,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">java;</a>
         		</li>
       		
 		</ul>
@@ -226,16 +239,24 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/01/02/20230102/">展开全文 >></a>
-    </p>
-    
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2024/05/12/booknote-kensyu1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">booknote-kensyu1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -256,352 +277,14 @@
 
 
 
-  
-    <article id="post-20220503" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/05/03/20220503/">20220503</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/05/03/20220503/" class="archive-article-date">
-        <time datetime="2022-05-03T06:11:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-03</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20220503/DSC_1718.jpg"></p>
-    
-    <a class="article-more-a" href="/2022/05/03/20220503/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/05/03/20220503/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-20220430" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2022/04/30/20220430/">20220430</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2022/04/30/20220430/" class="archive-article-date">
-        <time datetime="2022-04-30T13:19:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-30</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20220430/DSC_1277.jpg"></p>
-    
-    <a class="article-more-a" href="/2022/04/30/20220430/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/04/30/20220430/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-20210709" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/07/09/20210709/">大连-小平岛</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/07/09/20210709/" class="archive-article-date">
-        <time datetime="2021-07-09T12:56:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-09</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20210709/DSC_1127.jpg"></p>
-    
-    <a class="article-more-a" href="/2021/07/09/20210709/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/07/09/20210709/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210630" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/06/30/20210630/">20210630</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/06/30/20210630/" class="archive-article-date">
-        <time datetime="2021-06-30T06:02:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-30</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><img src="/../imags/20210630/DSC_0899.jpg"></p>
-    
-    <a class="article-more-a" href="/2021/06/30/20210630/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">撮影;</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/06/30/20210630/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
-  
 
 
           </div>
@@ -629,8 +312,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
