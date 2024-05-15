@@ -18,7 +18,7 @@
 <meta property="og:description" content="Java基礎">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-06T02:45:22.000Z">
-<meta property="article:modified_time" content="2024-05-06T05:20:57.419Z">
+<meta property="article:modified_time" content="2024-05-15T14:56:36.996Z">
 <meta property="article:author" content="NoAkiRa">
 <meta property="article:tag" content="java;">
 <meta name="twitter:card" content="summary">
@@ -284,6 +284,7 @@
 <h4 id="インクリメント／デクリメント演算子"><a href="#インクリメント／デクリメント演算子" class="headerlink" title="インクリメント／デクリメント演算子"></a>インクリメント／デクリメント演算子</h4><p>++</p>
 <p>–</p>
 <h3 id="型の変換"><a href="#型の変換" class="headerlink" title="型の変換"></a>型の変換</h3><h4 id="代入時の自動型変換"><a href="#代入時の自動型変換" class="headerlink" title="代入時の自動型変換"></a>代入時の自動型変換</h4><blockquote>
+<p>値型大小関係</p>
 <p>byte&lt;short&lt;int&lt;long&lt;float&lt;double</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="type">float</span> <span class="variable">f</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> f;</span><br><span class="line">		System.out.println(f);</span><br><span class="line">		System.out.println(d);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -304,21 +305,28 @@
 
 
 
-<h3 id="分岐と繰り返し"><a href="#分岐と繰り返し" class="headerlink" title="分岐と繰り返し"></a>分岐と繰り返し</h3><h4 id="if"><a href="#if" class="headerlink" title="if"></a>if</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>()&#123;</span><br><span class="line">	</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="while"><a href="#while" class="headerlink" title="while"></a>while</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">do&#123;</span><br><span class="line"></span><br><span class="line">&#125;while();</span><br></pre></td></tr></table></figure>
+<h3 id="main"><a href="#main" class="headerlink" title="main"></a>main</h3><p><code>public void main(String[] args)</code>はプログラムを始まるメソッド</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
 
 
-<h4 id="条件式"><a href="#条件式" class="headerlink" title="条件式"></a>条件式</h4><p>&amp;&amp;</p>
-<p>||</p>
-<p>!</p>
+<h3 id="分岐と繰り返し"><a href="#分岐と繰り返し" class="headerlink" title="分岐と繰り返し"></a>分岐と繰り返し</h3><h4 id="if"><a href="#if" class="headerlink" title="if"></a>if</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件)&#123;</span><br><span class="line">	</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="while"><a href="#while" class="headerlink" title="while"></a>while</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(条件)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;<span class="keyword">while</span>(条件);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="条件式"><a href="#条件式" class="headerlink" title="条件式"></a>条件式</h4><p>&amp;&amp;				and</p>
+<p>||				or</p>
+<p>!					not</p>
 <h4 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>()&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span> 	:</span><br><span class="line">	<span class="keyword">case</span> <span class="number">2</span>	:</span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span> 	:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">default</span>	:</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -328,6 +336,8 @@
 <h4 id="for"><a href="#for" class="headerlink" title="for"></a>for</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(初期化処理;繰り返し条件;繰り返しとき処理)&#123;&#125;</span><br></pre></td></tr></table></figure>
 
 
+
+<hr/>
 
 
 
